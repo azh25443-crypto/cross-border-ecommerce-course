@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173c3a">
+  <title>重庆产品出海机会探索器</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" data-go="0" aria-label="返回首页">
+      <span class="brand-mark">CQ</span>
+      <span><b>跨境电商实践</b><small>PROJECT-BASED LEARNING</small></span>
+    </a>
+    <div class="header-actions">
+      <span id="saveStatus" class="save-status">已自动保存</span>
+      <button class="text-button" id="resetButton" type="button">重新开始</button>
+    </div>
+  </header>
+
+  <div id="progressWrap" class="progress-wrap hidden">
+    <div class="progress-meta"><span id="stepLabel">STEP 1 / 5</span><span id="stepName">发现产业</span></div>
+    <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+  </div>
+
+  <main>
+    <section class="screen hero active" data-screen="0">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">《跨境电商实践》 · 项目任务 01</p>
+          <h1>重庆产品出海<br><span>机会探索器</span></h1>
+          <p class="english-title">Chongqing Global Opportunity Explorer</p>
+          <div class="question-block">
+            <small>CORE DRIVING QUESTION</small>
+            <h2>What can Chongqing sell to the world?</h2>
+            <p>重庆有什么可以卖向全球？</p>
+          </div>
+        </div>
+        <div class="brief-card">
+          <span class="card-number">01</span>
+          <h3>你的第一次市场观察</h3>
+          <p>本学期，你将和团队一起完成一个“重庆企业跨境市场拓展项目”。正式开始之前，请发现一个你认为具有海外市场潜力的重庆产品。</p>
+          <div class="framework">
+            <span><b>WHAT</b>卖什么？</span><span><b>WHO</b>谁会买？</span>
+            <span><b>WHERE</b>卖到哪里？</span><span><b>WHY</b>为什么？</span>
+            <span class="wide"><b>EVIDENCE</b>判断依据是什么？</span>
+          </div>
+          <button class="primary large" type="button" data-next>开始探索 <span>Start Exploring →</span></button>
+          <p class="privacy-note">无需登录 · 约 10 分钟 · 内容保存在本机</p>
+        </div>
+      </div>
+    </section>
+
+    <form id="explorerForm" novalidate>
+      <section class="screen" data-screen="1">
+        <div class="section-heading"><p class="eyebrow">STEP 1 · EXPLORE CHONGQING</p><h2>发现重庆产业</h2><p>从一个你感兴趣的产业开始，选择没有标准答案。</p></div>
+        <div class="industry-grid" id="industryGrid">
+          <label class="choice-card"><input type="radio" name="industry" value="汽车、摩托车及零部件"><span class="choice-index">01</span><b>汽车、摩托车及零部件</b><em>Automotive & Motorcycle</em><small>汽车零部件、摩托车、摩托车配件等</small></label>
+          <label class="choice-card"><input type="radio" name="industry" value="智能制造与工业产品"><span class="choice-index">02</span><b>智能制造与工业产品</b><em>Smart Manufacturing</em><small>机械设备、工具、工业零部件、智能产品等</small></label>
+          <label class="choice-card"><input type="radio" name="industry" value="食品与消费品"><span class="choice-index">03</span><b>食品与消费品</b><em>Food & Consumer Products</em><small>火锅底料、调味品、特色食品等</small></label>
+          <label class="choice-card"><input type="radio" name="industry" value="巴渝非遗与文创"><span class="choice-index">04</span><b>巴渝非遗与文创</b><em>Cultural & Creative Products</em><small>荣昌陶、非遗产品、文创产品等</small></label>
+          <label class="choice-card"><input type="radio" name="industry" value="其他重庆特色产品"><span class="choice-index">05</span><b>其他重庆特色产品</b><em>Other Chongqing Products</em><small>你观察到的其他重庆特色产品</small></label>
+        </div>
+        <label class="field"><span>我发现的具体产品是 <i>*</i></span><input name="product" required placeholder="例如：重庆火锅底料"></label>
+        <p class="error" aria-live="polite"></p><nav class="form-nav"><button type="button" class="secondary" data-prev>← 返回</button><button type="button" class="primary" data-next>下一步 →</button></nav>
+      </section>
+
+      <section class="screen" data-screen="2">
+        <div class="section-heading"><p class="eyebrow">STEP 2 · WHO</p><h2>谁可能购买这个产品？</h2><p>Who might buy it?</p></div>
+        <div class="buyer-options">
+          <label><input type="radio" name="buyer" value="海外企业 Overseas Businesses"><span><b>海外企业</b><small>Overseas Businesses</small></span></label>
+          <label><input type="radio" name="buyer" value="海外消费者 Overseas Consumers"><span><b>海外消费者</b><small>Overseas Consumers</small></span></label>
+          <label><input type="radio" name="buyer" value="两者都有可能 Both"><span><b>两者都有可能</b><small>Both</small></span></label>
+        </div>
+        <label class="field"><span>请简单说明你的判断理由 <i>*</i></span><textarea name="buyerReason" required maxlength="300" placeholder="建议 50—100 字。你观察到了什么？为什么这类客户可能需要它？"></textarea><small class="count"><span>0</span> / 300</small></label>
+        <div class="teaching-note"><b>先做判断，不急着贴标签</b><p>现阶段不需要判断 B2B 或 B2C，相关知识将在下一周学习。</p></div>
+        <p class="error" aria-live="polite"></p><nav class="form-nav"><button type="button" class="secondary" data-prev>← 上一步</button><button type="button" class="primary" data-next>下一步 →</button></nav>
+      </section>
+
+      <section class="screen" data-screen="3">
+        <div class="section-heading"><p class="eyebrow">STEP 3 · WHERE</p><h2>它可能进入哪个海外市场？</h2><p>Where could it be sold?</p></div>
+        <div class="two-column"><div><label class="field"><span>目标国家 / 地区 <i>*</i></span><input name="market" required placeholder="例如：德国、东南亚"></label><label class="field"><span>为什么选择这个市场？ <i>*</i></span><textarea name="marketReason" required placeholder="写下你的初步观察和判断……"></textarea></label></div><aside class="prompt-card"><small>思考线索 / THINK ABOUT</small><ul><li>市场需求</li><li>消费习惯</li><li>产业特点</li><li>文化因素</li><li>中国商品接受度</li><li>自己已有的观察</li></ul></aside></div>
+        <div class="reassurance">“现在的判断可以不完全正确。项目学习的目的，就是用后续的数据和研究不断验证、修正我们的判断。”</div>
+        <p class="error" aria-live="polite"></p><nav class="form-nav"><button type="button" class="secondary" data-prev>← 上一步</button><button type="button" class="primary" data-next>下一步 →</button></nav>
+      </section>
+
+      <section class="screen" data-screen="4">
+        <div class="section-heading"><p class="eyebrow">STEP 4 · EVIDENCE</p><h2>不要只凭感觉——寻找证据</h2><p>Don't Just Guess. Find Evidence.</p></div>
+        <div class="evidence-intro"><b>寻找至少一条证据</b><p>新闻报道 · 企业网站 · 跨境电商平台 · 行业报告 · Google / 搜索引擎 · 社交媒体 · 海外电商平台</p></div>
+        <div class="two-column fields"><div><label class="field"><span>证据来源 <i>*</i></span><input name="source" required placeholder="例如：某行业报告 / Amazon"></label><label class="field"><span>网页链接 <small>（选填）</small></span><input type="url" name="url" placeholder="https://..."></label></div><div><label class="field"><span>我发现的信息 <i>*</i></span><textarea name="finding" required placeholder="用自己的话概括信息……"></textarea></label><label class="field"><span>为什么支持我的判断？ <i>*</i></span><textarea name="evidenceReason" required placeholder="说明证据与判断之间的关系……"></textarea></label></div></div>
+        <p class="error" aria-live="polite"></p><nav class="form-nav"><button type="button" class="secondary" data-prev>← 上一步</button><button type="button" class="primary" data-next>下一步 →</button></nav>
+      </section>
+
+      <section class="screen" data-screen="5">
+        <div class="section-heading"><p class="eyebrow">STEP 5 · QUESTION</p><h2>你还有什么不知道？</h2><p>What Don't You Know Yet?</p></div>
+        <div class="question-layout"><div><blockquote>优秀的项目不是从“答案”开始，<br>而是从一个值得研究的问题开始。</blockquote><label class="field"><span>关于这个产品出海，我现在最想知道的问题是 <i>*</i></span><textarea name="question" required class="large-textarea" placeholder="写下一个具体、值得继续调查的问题……"></textarea></label></div><aside class="example-card"><small>灵感示例 / FOR INSPIRATION</small><p id="exampleQuestion"></p><button id="shuffleExample" class="text-button" type="button">换一个例子 ↻</button></aside></div>
+        <p class="error" aria-live="polite"></p><nav class="form-nav"><button type="button" class="secondary" data-prev>← 上一步</button><button type="button" class="primary generate" data-generate>生成我的出海机会卡 <span>Generate My Opportunity Card →</span></button></nav>
+      </section>
+    </form>
+
+    <section class="screen result-screen" data-screen="6">
+      <div class="result-actions"><button type="button" class="secondary" data-prev>← 返回修改</button><div><button type="button" class="secondary" id="printButton">打印 / 保存为 PDF</button><button type="button" class="text-button" id="resultReset">重新开始</button></div></div>
+      <article class="opportunity-card" id="opportunityCard">
+        <header><div><p>PROJECT 01 · FIRST MARKET OBSERVATION</p><h1>重庆产品出海机会卡</h1><h2>Chongqing Global Opportunity Card</h2></div><span class="stamp">CQ<br>GLOBAL</span></header>
+        <div class="card-meta"><p><small>产业 / INDUSTRY</small><b data-result="industry"></b></p><p><small>产品 / PRODUCT</small><b data-result="product"></b></p></div>
+        <div class="result-grid">
+          <section><span>01</span><small>WHAT</small><h3>我们的产品</h3><p data-result="product"></p></section>
+          <section><span>02</span><small>WHO</small><h3>潜在客户</h3><p><b data-result="buyer"></b><br><i data-result="buyerReason"></i></p></section>
+          <section><span>03</span><small>WHERE / WHY</small><h3>潜在市场与选择理由</h3><p><b data-result="market"></b><br><i data-result="marketReason"></i></p></section>
+          <section><span>04</span><small>EVIDENCE</small><h3>我们找到的证据</h3><p><b data-result="source"></b><br><i data-result="finding"></i><br><em data-result="evidenceReason"></em></p><a data-result-link="url" target="_blank" rel="noopener"></a></section>
+          <section class="result-question"><span>05</span><small>QUESTION</small><h3>我们接下来需要回答的问题</h3><p data-result="question"></p></section>
+        </div>
+        <footer><b>《跨境电商实践》</b><span>Project 01 · Chongqing Global Opportunity Explorer</span></footer>
+      </article>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
